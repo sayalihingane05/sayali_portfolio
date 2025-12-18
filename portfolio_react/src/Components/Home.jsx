@@ -56,7 +56,7 @@
 
 
 import React from "react";
-import avatarImg from "../assets/avatarImg.jpg";
+import avatarImg from '../assets/avatarImg.jpg';
 
 const Home = () => {
   return (
