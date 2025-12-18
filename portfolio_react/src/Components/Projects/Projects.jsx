@@ -2,94 +2,28 @@
 // import ProjectCard from "./ProjectCard";
 
 // const Projects = () => {
-//   return (
-//     <div id="Projects" className="p-10 md:p-24 text-white">
-//       <h1 className="text-2xl md:text-4xl font-bold">Projects</h1>
-
-//       <div className="py-12 px-8 flex flex-wrap gap-5">
-//         <ProjectCard
-//           title="To-Do Application"
-//           main="A full-stack To-Do app built using React, Java (Spring Boot), and MySQL. It allows users to securely log in, create, update, and delete tasks with data managed through REST APIs following MVC architecture."
-//         />
-
-//         <ProjectCard
-//           title="Weather Forecast Web App"
-//           main="Developed using React for frontend and Spring Boot for backend, this application fetches real-time weather data from external APIs. It displays current weather conditions with a responsive and user-friendly interface."
-//         />
-
-//         <ProjectCard
-//           title="Daily Expenses Tracker"
-//           main="A full-stack expense management system built with React, backend REST services, and MySQL. Users can securely track daily income and expenses, perform CRUD operations, and view expense summaries."
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Projects;
-
-// import React from "react";
-// import ProjectCard from "./ProjectCard";
-
-// const Projects = () => {
-//   return (
-//     <section
-//       id="Projects"
-//       className="p-6 sm:p-10 md:p-24 text-white"
-//     >
-//       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center md:text-left">
-//         Projects
-//       </h1>
-
-//       {/* Responsive Grid */}
-//       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-//         <ProjectCard
-//           title="To-Do Application"
-//           main="A full-stack To-Do app built using React, Spring Boot, and MySQL with secure login and complete CRUD functionality."
-//         />
-
-//         <ProjectCard
-//           title="Weather Forecast Web App"
-//           main="A full-stack weather application using React and Spring Boot that fetches real-time weather data from external APIs."
-//         />
-
-//         <ProjectCard
-//           title="Daily Expenses Tracker"
-//           main="A full-stack expense management system allowing users to track income and expenses with secure authentication and summaries."
-//         />
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Projects;
-
-
-// import React from "react";
-// import ProjectCard from "./ProjectCard";
-
-// const Projects = () => {
 //   const projects = [
 //     {
 //       title: "To-Do Application",
-//       main: "Full-stack To-Do app built using React, Spring Boot, and MySQL with secure login and complete CRUD functionality.",
+//       main: "Full-stack app using React, Spring Boot, MySQL.",
 //     },
 //     {
-//       title: "Weather Forecast Web App",
-//       main: "A full-stack weather application using React and Spring Boot that fetches real-time weather data from external APIs.",
+//       title: "Weather Forecast App",
+//       main: "Weather app with live API integration.",
 //     },
 //     {
 //       title: "Daily Expenses Tracker",
-//       main: "Full-stack expense management system allowing users to track income and expenses with secure authentication and summaries.",
+//       main: "Expense management system with authentication.",
 //     },
 //   ];
 
 //   return (
-//     <section id="Projects" className="p-6 md:p-24 text-white">
-//       <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-10">Projects</h1>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-//         {projects.map((proj) => (
-//           <ProjectCard key={proj.title} {...proj} />
+//     <section id="Projects" className="px-6 md:px-20 py-16 text-white">
+//       <h2 className="text-4xl font-bold mb-10">Projects</h2>
+
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+//         {projects.map((p) => (
+//           <ProjectCard key={p.title} {...p} />
 //         ))}
 //       </div>
 //     </section>
@@ -98,32 +32,49 @@
 
 // export default Projects;
 
+
 import React from "react";
 import ProjectCard from "./ProjectCard";
+
+// Images directly from assets folder
+import todoImg from "../../assets/todo.jpg";
+import weatherImg from "../../assets/weather.jpg";
+import expenseImg from "../../assets/expense.jpg";
 
 const Projects = () => {
   const projects = [
     {
       title: "To-Do Application",
       main: "Full-stack app using React, Spring Boot, MySQL.",
+      img: todoImg,
+      demo: "https://your-demo-link.com",
+      source: "https://github.com/your-repo-link",
     },
     {
       title: "Weather Forecast App",
       main: "Weather app with live API integration.",
+      img: weatherImg,
+      demo: "https://your-demo-link.com",
+      source: "https://github.com/your-repo-link",
     },
     {
       title: "Daily Expenses Tracker",
       main: "Expense management system with authentication.",
+      img: expenseImg,
+      demo: "https://your-demo-link.com",
+      source: "https://github.com/your-repo-link",
     },
   ];
 
   return (
     <section id="Projects" className="px-6 md:px-20 py-16 text-white">
-      <h2 className="text-4xl font-bold mb-10">Projects</h2>
+      <h2 className="text-4xl font-bold mb-12 text-center">
+        Projects
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((p) => (
-          <ProjectCard key={p.title} {...p} />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
     </section>
