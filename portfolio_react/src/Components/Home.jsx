@@ -55,33 +55,70 @@
 // export default Home;
 
 
+// import React from "react";
+// import avatarImg from '../assets/avatarImg.jpg';
+
+// const Home = () => {
+//   return (
+//     <div className="text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20">
+      
+//       <div className="md:w-2/4 md:pr-10 text-center md:text-left">
+//         <h1 className="text-3xl md:text-6xl font-bold leading-snug">
+//           Hello, I am Sayali
+//         </h1>
+//         <p className="mt-4 md:mt-6 text-sm md:text-base">
+//           I’m a passionate Full-Stack Developer with strong React, Java, SQL skills. I enjoy building responsive applications and improving my skills through real-world projects.
+//         </p>
+//         <button className="mt-5 bg-[#465697] text-white py-2 px-4 md:py-2 md:px-6 rounded-3xl hover:scale-105 transition duration-300 font-semibold">
+//           Contact Me
+//         </button>
+//       </div>
+
+//       <div className="mt-10 md:mt-0 flex justify-center">
+//         <img
+//           src={avatarImg}
+//           alt="Avatar"
+//           className="w-40 h-40 md:w-80 md:h-80 rounded-full object-cover"
+//         />
+//       </div>
+
+//     </div>
+//   );
+// };
+
+// export default Home;
+
+
 import React from "react";
-import avatarImg from '../assets/avatarImg.jpg';
+import avatarImg from "../assets/avatarImg.jpg";
 
 const Home = () => {
   return (
-    <div className="text-white flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-10 md:py-20">
-      
-      <div className="md:w-2/4 md:pr-10 text-center md:text-left">
-        <h1 className="text-3xl md:text-6xl font-bold leading-snug">
+    <div className="text-white flex flex-col md:flex-row items-center 
+      justify-between px-6 md:px-20 py-20 animate-fadeUp">
+
+      <div className="md:w-2/4 text-center md:text-left">
+        <h1 className="text-3xl md:text-6xl font-bold">
           Hello, I am Sayali
         </h1>
-        <p className="mt-4 md:mt-6 text-sm md:text-base">
-          I’m a passionate Full-Stack Developer with strong React, Java, SQL skills. I enjoy building responsive applications and improving my skills through real-world projects.
+
+        <p className="mt-6 text-sm md:text-base">
+          I’m a passionate Full-Stack Developer with strong React, Java, and SQL skills.
         </p>
-        <button className="mt-5 bg-[#465697] text-white py-2 px-4 md:py-2 md:px-6 rounded-3xl hover:scale-105 transition duration-300 font-semibold">
-          Contact Me
-        </button>
+
+        <a href="#Contact">
+          <button className="mt-6 bg-[#465697] px-6 py-2 rounded-3xl 
+            hover:scale-105 transition font-semibold">
+            Contact Me
+          </button>
+        </a>
       </div>
 
-      <div className="mt-10 md:mt-0 flex justify-center">
-        <img
-          src={avatarImg}
-          alt="Avatar"
-          className="w-40 h-40 md:w-80 md:h-80 rounded-full object-cover"
-        />
-      </div>
-
+      <img
+        src={avatarImg}
+        alt="Avatar"
+        className="w-40 h-40 md:w-80 md:h-80 rounded-full object-cover mt-10 md:mt-0"
+      />
     </div>
   );
 };

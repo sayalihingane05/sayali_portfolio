@@ -54,54 +54,110 @@
 //   )
 // }
 
-import React from 'react';
-import { IoArrowForward } from 'react-icons/io5';
-import AboutImg from '../../assets/AboutImg.jpg';
+// import React from 'react';
+// import { IoArrowForward } from 'react-icons/io5';
+// import AboutImg from '../../assets/AboutImg.jpg';
+
+// const About = () => {
+//   const skills = [
+//     {
+//       title: "Frontend Developer",
+//       description:
+//         "I build responsive, user-friendly web apps using React, JavaScript, HTML, CSS, and Tailwind CSS.",
+//     },
+//     {
+//       title: "Backend Developer",
+//       description:
+//         "I write clean, maintainable backend code, with proper validation, error handling, and integration with frontends.",
+//     },
+//     {
+//       title: "Database Developer",
+//       description:
+//         "I design well-structured databases, ensure data integrity, and connect them to backend apps using JDBC.",
+//     },
+//   ];
+
+//   return (
+//     <section
+//       id="About"
+//       className="text-white bg-black bg-opacity-30 shadow-xl rounded-lg mx-4 md:mx-20 p-6 md:p-12"
+//     >
+//       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center md:text-left">
+//         About
+//       </h2>
+
+//       <div className="flex flex-col md:flex-row items-center gap-8">
+//         {/* Image */}
+//         <img
+//           src={AboutImg}
+//           alt="About"
+//           className="w-full md:w-1/3 h-auto rounded-lg object-cover"
+//         />
+
+//         {/* Skills */}
+//         <div className="flex flex-col gap-6 w-full md:w-2/3">
+//           {skills.map((skill) => (
+//             <div key={skill.title} className="flex gap-3 items-start">
+//               <IoArrowForward size={28} className="mt-1 text-[#465697]" />
+//               <div>
+//                 <h3 className="text-xl md:text-2xl font-semibold">{skill.title}</h3>
+//                 <p className="text-sm md:text-md leading-relaxed mt-1">{skill.description}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
+
+import React from "react";
+import { IoArrowForward } from "react-icons/io5";
+import AboutImg from "../../assets/AboutImg.jpg";
 
 const About = () => {
   const skills = [
     {
       title: "Frontend Developer",
       description:
-        "I build responsive, user-friendly web apps using React, JavaScript, HTML, CSS, and Tailwind CSS.",
+        "I build responsive web apps using React, JavaScript, HTML, CSS, Tailwind.",
     },
     {
       title: "Backend Developer",
       description:
-        "I write clean, maintainable backend code, with proper validation, error handling, and integration with frontends.",
+        "I develop secure backend services with clean code and validations.",
     },
     {
       title: "Database Developer",
       description:
-        "I design well-structured databases, ensure data integrity, and connect them to backend apps using JDBC.",
+        "I design structured databases and integrate them using JDBC & SQL.",
     },
   ];
 
   return (
     <section
       id="About"
-      className="text-white bg-black bg-opacity-30 shadow-xl rounded-lg mx-4 md:mx-20 p-6 md:p-12"
+      className="animate-fadeUp text-white bg-black/30 shadow-xl 
+      rounded-lg mx-4 md:mx-20 p-6 md:p-12"
     >
-      <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center md:text-left">
-        About
-      </h2>
+      <h2 className="text-4xl font-bold mb-8">About</h2>
 
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        {/* Image */}
+      <div className="flex flex-col md:flex-row gap-10 items-center">
         <img
           src={AboutImg}
           alt="About"
-          className="w-full md:w-1/3 h-auto rounded-lg object-cover"
+          className="w-full md:w-1/3 rounded-lg"
         />
 
-        {/* Skills */}
-        <div className="flex flex-col gap-6 w-full md:w-2/3">
+        <div className="flex flex-col gap-6 md:w-2/3">
           {skills.map((skill) => (
-            <div key={skill.title} className="flex gap-3 items-start">
-              <IoArrowForward size={28} className="mt-1 text-[#465697]" />
+            <div key={skill.title} className="flex gap-3">
+              <IoArrowForward size={26} className="text-[#465697]" />
               <div>
-                <h3 className="text-xl md:text-2xl font-semibold">{skill.title}</h3>
-                <p className="text-sm md:text-md leading-relaxed mt-1">{skill.description}</p>
+                <h3 className="text-xl font-semibold">{skill.title}</h3>
+                <p className="text-sm mt-1">{skill.description}</p>
               </div>
             </div>
           ))}

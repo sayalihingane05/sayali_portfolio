@@ -65,6 +65,39 @@
 // export default Projects;
 
 
+// import React from "react";
+// import ProjectCard from "./ProjectCard";
+
+// const Projects = () => {
+//   const projects = [
+//     {
+//       title: "To-Do Application",
+//       main: "Full-stack To-Do app built using React, Spring Boot, and MySQL with secure login and complete CRUD functionality.",
+//     },
+//     {
+//       title: "Weather Forecast Web App",
+//       main: "A full-stack weather application using React and Spring Boot that fetches real-time weather data from external APIs.",
+//     },
+//     {
+//       title: "Daily Expenses Tracker",
+//       main: "Full-stack expense management system allowing users to track income and expenses with secure authentication and summaries.",
+//     },
+//   ];
+
+//   return (
+//     <section id="Projects" className="p-6 md:p-24 text-white">
+//       <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-10">Projects</h1>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+//         {projects.map((proj) => (
+//           <ProjectCard key={proj.title} {...proj} />
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Projects;
+
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
@@ -72,24 +105,25 @@ const Projects = () => {
   const projects = [
     {
       title: "To-Do Application",
-      main: "Full-stack To-Do app built using React, Spring Boot, and MySQL with secure login and complete CRUD functionality.",
+      main: "Full-stack app using React, Spring Boot, MySQL.",
     },
     {
-      title: "Weather Forecast Web App",
-      main: "A full-stack weather application using React and Spring Boot that fetches real-time weather data from external APIs.",
+      title: "Weather Forecast App",
+      main: "Weather app with live API integration.",
     },
     {
       title: "Daily Expenses Tracker",
-      main: "Full-stack expense management system allowing users to track income and expenses with secure authentication and summaries.",
+      main: "Expense management system with authentication.",
     },
   ];
 
   return (
-    <section id="Projects" className="p-6 md:p-24 text-white">
-      <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left mb-10">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-        {projects.map((proj) => (
-          <ProjectCard key={proj.title} {...proj} />
+    <section id="Projects" className="px-6 md:px-20 py-16 text-white">
+      <h2 className="text-4xl font-bold mb-10">Projects</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((p) => (
+          <ProjectCard key={p.title} {...p} />
         ))}
       </div>
     </section>
