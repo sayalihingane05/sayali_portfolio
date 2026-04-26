@@ -1,75 +1,46 @@
-// import React from "react";
-// import ProjectCard from "./ProjectCard";
 
-// const Projects = () => {
-//   const projects = [
-//     {
-//       title: "To-Do Application",
-//       main: "Full-stack app using React, Spring Boot, MySQL.",
-//     },
-//     {
-//       title: "Weather Forecast App",
-//       main: "Weather app with live API integration.",
-//     },
-//     {
-//       title: "Daily Expenses Tracker",
-//       main: "Expense management system with authentication.",
-//     },
-//   ];
-
-//   return (
-//     <section id="Projects" className="px-6 md:px-20 py-16 text-white">
-//       <h2 className="text-4xl font-bold mb-10">Projects</h2>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//         {projects.map((p) => (
-//           <ProjectCard key={p.title} {...p} />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Projects;
 
 
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
-// Images directly from assets folder
-import todoImg from "../../assets/todo.jpg";
-import weatherImg from "../../assets/weather.jpg";
-import expenseImg from "../../assets/expense.jpg";
+
+import eventImg from "../../assets/event.jpg";
+import BookImg from "../../assets/book.jpg";
+import websiteImg from "../../assets/website.jpg";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "To-Do Application",
-      main: "Full-stack app using React, Spring Boot, MySQL.",
-      img: todoImg,
-      demo: "https://your-demo-link.com",
-      source: "https://github.com/your-repo-link",
-    },
-    {
-      title: "Weather Forecast App",
-      main: "Weather app with live API integration.",
-      img: weatherImg,
-      demo: "https://your-demo-link.com",
-      source: "https://github.com/your-repo-link",
-    },
-    {
-      title: "Daily Expenses Tracker",
-      main: "Expense management system with authentication.",
-      img: expenseImg,
-      demo: "https://your-demo-link.com",
-      source: "https://github.com/your-repo-link",
-    },
-  ];
+  {
+    title: "College Event Management ",
+    main: "A full-stack web application to manage college events with features like user registration, event creation, participant tracking, and admin control panel.",
+    tech: "React | Node.js | MongoDB",
+    img: eventImg,
+    demo: "https://college-event-management-zjh1.vercel.app",
+    source: "https://github.com/your-repo-link-1",
+  },
+  {
+    title: "Book Management System",
+    main: "A dynamic web application for managing books with functionalities like adding, updating, deleting, and viewing records. Includes user-friendly interface and efficient data handling.",
+    tech: "React | Node.js | MongoDB",
+    img: BookImg,
+    demo: "https://client-three-ecru-14.vercel.app",
+    source: "https://github.com/your-repo-link-2",
+  },
+  {
+    title: "Business Coach Website",
+    main: "A modern and fully responsive business website designed for a professional coach. Features include services section, testimonials, books showcase, and event highlights with a clean and engaging UI.",
+    tech: "React.js | Responsive Design",
+    img: websiteImg,
+    demo: "https://website-one-snowy-28.vercel.app",
+    source: "https://github.com/your-repo-link-3",
+  },
+];
 
   return (
     <section id="Projects" className="px-6 md:px-20 py-16 text-white">
       <h2 className="text-4xl font-bold mb-12 text-center">
-        Projects
+        My Projects
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

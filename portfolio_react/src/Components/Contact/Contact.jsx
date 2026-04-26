@@ -1,31 +1,5 @@
 
 
-// import React from "react";
-// import { MdOutlineEmail } from "react-icons/md";
-// import { CiLinkedin } from "react-icons/ci";
-// import { FaGithub } from "react-icons/fa";
-
-// const Contact = () => {
-//   return (
-//     <div id="Contact" className="bg-[#2f3b69] text-white 
-//       flex flex-col md:flex-row justify-around p-12 animate-fadeUp">
-
-//       <div>
-//         <h1 className="text-4xl font-bold">Contact</h1>
-//         <p className="mt-2">Feel free to reach out!</p>
-//       </div>
-
-//       <ul className="space-y-3 mt-6 md:mt-0">
-//         <li className="flex gap-2"><MdOutlineEmail /> sayalihingane00@gmail.com</li>
-//         <li className="flex gap-2"><CiLinkedin /> linkedin.com/in/sayali-hingane</li>
-//         <li className="flex gap-2"><FaGithub /> github.com/sayalihingane05</li>
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
 
 import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
